@@ -60,6 +60,36 @@ body {
 	background-color: darkgreen;
 }
 
+/* Details for the home tab */
+
+
+.announcement{
+  padding-bottom: 20px;
+}
+
+.item-header{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.alliance-box{
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.boxed{
+  border: 2px solid black;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+
 .nav-justified {
   background-color: #eee;
   border: 1px solid #ccc;
