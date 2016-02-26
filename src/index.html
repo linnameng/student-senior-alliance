@@ -29,6 +29,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
   </head>
 
   <body>
@@ -48,86 +50,272 @@
           </ul>
         </nav>
       <div class="tab-content">
+		  
+		<!-- Start all pages related to Home -->
+		  
         <div id="home" class="tab-pane fade in active">
-            <h3>Home</h3>
-            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-        </div>
-        <div id="search" class="tab-pane fade in">
-            <h3>Search Jobs</h3>
-            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-        </div>
-        <div id="post" class="tab-pane fade">
-            <h3>Post Jobs</h3>
-            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
-        </div>
-        <div id="profile" class="tab-pane fade">
-				 <div class="container">
-					<h1 class="page-header">Profile Details</h1>
-					<div class="row">
-						<!-- left column -->
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="text-center">
-								<img src="profile_pic.png" class="avatar img-circle img-thumbnail" alt="avatar">
-								<h6>Upload a different photo...</h6>
-								<input type="file" class="text-center center-block well well-sm">
+            <div class="container">
+				<h1 class="page-header">Home</h1>
+				<div class="boxed">
+					<h1 class="item-header">Announcements</h1>
+					<p class= "announcement">
+						<u>February 25th, 2016:</u>  The Student Senior Alliance finally goes live today! Thanks everyone for all of your patience.
+					</p>
+					<p class= "announcement">
+						<u>February 12th, 2016:</u>  The trial site will be down tomorrow, February 13th, between 2pm and 5pm for maintenance.
+					</p>
+					<p class= "announcement">
+						<u>January 29th, 2016:</u>  The Student Senior Alliance will be submitting the design document for review today. Fingers crossed!
+					</p>
+				</div>
+				<div class="boxed">
+					<h1 class="item-header">Upcoming Alliances</h1>
+					<div class="container-fluid">
+						<div class="row alliance-box">
+							<div class="col-md-3">
+								<p>
+									<u>March 1st</u> from <u>5pm</u> to <u>8pm</u>
+								</p>
 							</div>
-						</div>
-						<!-- edit form column -->
-						<div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-							<form class="form-horizontal" role="form">
-								<div class="form-group">
-								  <label class="col-lg-3 control-label">First name:</label>
-								  <div class="col-lg-8">
-								    <input class="form-control" value="Jane" type="text">
-								  </div>
+							<div class="col-md-3">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-12">
+												<img alt="avatar" src="profile-student.jpg" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<p>
+													Cathy Wells
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">	 
+										<a href="#search" id="btn-view-profile" class="btn btn-default btn-lg" style="font-size:16px; margin-top: 50px; padding-left: 10px; width: 107px">View Profile</a>
+									</div>
 								</div>
-								<div class="form-group">
-								  <label class="col-lg-3 control-label">Last name:</label>
-								  <div class="col-lg-8">
-								    <input class="form-control" value="Bishop" type="text">
-								  </div>
-								</div>
-								<div class="form-group">
-								  <label class="col-lg-3 control-label">Email:</label>
-								  <div class="col-lg-8">
-								    <input disabled class="form-control" value="janesemail@gmail.com" type="text">
-								  </div>
-								</div>
-								<div class="form-group">
-								  <label class="col-md-3 control-label">Username:</label>
-								  <div class="col-md-8">
-								    <input disabled class="form-control" value="janeuser" type="text">
-								  </div>
-								</div>
-								<div class="form-group">
-								  <label class="col-md-3 control-label">Password:</label>
-								  <div class="col-md-8">
-								    <input class="form-control" value="11111122333" type="password">
-								  </div>
-								</div>
-								<div class="form-group">
-								  <label class="col-md-3 control-label">Confirm password:</label>
-								  <div class="col-md-8">
-								    <input class="form-control" value="11111122333" type="password">
-								  </div>
-								</div>
-								<div class="form-group">
-								  <label class="col-md-3 control-label">Something about yourself:</label>
-								  <div class="col-md-8">
-								    <textarea class="form-control" rows="5">Interests include knitting and selfies</textarea>
-								  </div>
-								</div>
-								<div class="form-group save-profile">
-								  <label class="col-md-3 control-label"></label>
-								  <div class="col-md-8">
-								    <input class="btn" value="Save Changes" type="submit">
-								    <span></span>
-								  </div>
-								</div>
-							</form>
+							</div>
+							<div class="col-md-3">
+								<h4>
+									<b>Offer</b>
+								</h4>
+								<p>
+									Help with iPad use.
+								</p>
+							</div>
+							<div class="col-md-3">
+								<h4>
+									<b>Request</b>
+								</h4>
+								<p>
+									Baking lesson
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="boxed">
+					<h1 class="item-header">Your Posts</h1>
+					<p>
+						<center>Your current posts will show up here. To create a new post, select the <a href="#post">Post Jobs</a> tab from the top of the screen.</center>
+					</p>
+				</div>
+            </div>
+        </div>
+
+		<!-- End all pages related to Home -->
+
+        <!-- Start all pages related to Searching/Contacting -->
+
+        <div id="search" class="tab-pane fade in">
+          <div id="search-current-page">
+            <!-- Container for the current page under the search tab -->
+          </div> 
+          <!-- Start hidden content that can be dispalyed in the search tab -->
+          <div id="posting-details" style="display:none">
+            <br>
+            <a href="search-results-technology.html">Search Jobs</a> > View Posting
+
+            <h3>View Posting: </h3>
+            <p align="left"><img src="student_pic.png" style="float:right">
+            <blockquote><h4>About Me</h4>
+              Hi, I'm John and I'm a third-year student at UNB. I joined the SSA last year and I'd love to help with anything you might need, especially if it involves technology. In my free time I also love to ski and play basketball.
+            </blockquote></p>
+            <b>First Name:</b> John<br><br>
+            <b>Last Name:</b> Doe<br><br>
+            <b>Email Address:</b> john.doe@unb.ca<br><br>
+            <b>Phone Number:</b> 555-555-5555<br><br>
+            <b>I am offering:</b><br><br>
+            Technology: I'm willing to teach people how to set up their phones, computers, or other devices<br><br>
+            <b>I am requesting:</b><br><br>
+            Baking: I'd like to learn how to make bread from scratch.<br><br>
+            <a href="#posting-contact" id="btn-contact-this-person" class="btn btn-default btn-lg">Contact This Person</a>
+            <br><br><br>
+          </div>
+          <div id="posting-contact" style="display:none">
+             <br>
+             <a href="search-results-technology.html">Search Jobs</a> > <a href="search-view-posting">View Posting</a> > Contact
+
+              <h3>Contact: </h3>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">To</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="john.doe@unb.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">From</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="natalie.webber@unb.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Subject</label>
+                    <div class="col-sm-10">
+                      <input class="form-control"  value="Somebody responded to your Student-Senior Alliance posting!">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <a href="#contact-complete" class="btn btn-default btn-lg" id="btn-send-message">Send Message</a>
+                    </div>
+                  </div>
+                </form>
+              <br><br><br>
+          </div>
+
+          <div id="contact-complete" style="display:none">
+            <p><br>
+              You have successfully contacted this user.<br><br>
+              <a href="#search-page-results" class="btn btn-default btn-lg" id="btn-search-return">Return to Search Page</a>
+            </p>
+          </div>
+
+          <div id="search-page-results">
+            <h3>I'm looking for someone to help me with:</h3>
+              <p>
+              <form class="form-inline .form-inline" role="form">
+                <div class="form-group">
+                  <select class="form-control" id="category-select" name="category-select">
+                    <option selected="true" disabled="disabled" value="default">Choose a Category</option>   
+                    <option value="#search-results-technology">Technology</option>
+                    <option value="#search-no-results">Yard Work</option>
+                    <option value="#search-no-results">Cooking and Baking</option>
+                  </select>
+                   <a class="btn btn-default" id="btn-search-jobs">Search Jobs</a>
+                </div>
+              </form>
+
+              <div id="search-results">
+                <!-- Target container for different search results, filled by jquery click events -->
+              </div>
+
+              <div id="search-no-results" style="display: none;">
+                <p><br>No results found.</p>
+              </div>
+
+              <div id="search-results-technology" style="display: none;">
+                <h3>Results: </h3>
+                <table class="table table-striped">
+                  <thead class="thead-inverse">
+                    <tr><th>First Name</th><th>Last Name</th><th>Offering</th><th>Requesting</th><th></th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>John</td><td>Doe</td><td><b>Technology:</b> I'm willing to teach people how to set up their phones, computers, or other devices</td><td><b>Baking:</b> I'd like to learn how to make bread from scratch.</td> <td><a href="#posting-details" id="btn-contact">Contact</a></td>
+                    </tr>
+                    <tr><td>Mary</td><td>Brown</td><td><b>Technology:</b> I'm great at installing software and teaching people how to use all sorts of applications.</td><td><b>Knitting:</b> I want to get started with making scarves and gloves this winter.</td><td>Contact</td>
+                    </tr><tr><td>July</td><td>Dooley</td><td><b>Technology:</b> If you have internet or wireless problems, I'd be happy to help.</td><td><b>Music Lessons:</b> I'm looking for someone to teach me how to play piano.</td><td>Contact</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> 
+          <!-- End all pages related to Searching/Contacting -->
+
+          <div id="post" class="tab-pane fade">
+              <h3>Post Jobs</h3>
+              <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+          </div>
+
+          <div id="profile" class="tab-pane fade">
+           <div class="container">
+            <h1 class="page-header">Profile Details</h1>
+            <div class="row">
+              <!-- left column -->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="text-center">
+                  <img src="profile_pic.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                  <h6>Upload a different photo...</h6>
+                  <input type="file" class="text-center center-block well well-sm">
+                </div>
+              </div>
+              <!-- edit form column -->
+              <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">First name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" value="Jane" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Last name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" value="Bishop" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                      <input disabled class="form-control" value="janesemail@gmail.com" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Username:</label>
+                    <div class="col-md-8">
+                      <input disabled class="form-control" value="janeuser" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Password:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" value="11111122333" type="password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Confirm password:</label>
+                    <div class="col-md-8">
+                      <input class="form-control" value="11111122333" type="password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label">Something about yourself:</label>
+                    <div class="col-md-8">
+                      <textarea class="form-control" rows="5">Interests include knitting and selfies</textarea>
+                    </div>
+                  </div>
+                  <div class="form-group save-profile">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                      <input class="btn" value="Save Changes" type="submit">
+                      <span></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!-- /container -->
@@ -136,5 +324,7 @@
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+
   </body>
 </html>
