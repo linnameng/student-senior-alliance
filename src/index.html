@@ -124,7 +124,7 @@
           <div id="contact-complete" style="display:none">
             <p><br>
               You have successfully contacted this user.<br><br>
-              <a href="#search-page-results" class="btn btn-default btn-lg" id="btn-search-return">Return to Search Page</a>
+              <a href="" class="btn btn-default btn-lg">Return to Home Page</a>
             </p>
           </div>
 
@@ -170,9 +170,92 @@
           </div> 
           <!-- End all pages related to Searching/Contacting -->
 
+          <!-- Start all pages related to Posting a Job -->
           <div id="post" class="tab-pane fade">
-              <h3>Post Jobs</h3>
-              <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+
+              <div id="post-job-container">
+                <!-- Container for the current page under the search tab -->
+              </div> 
+
+              <div id="post-job-step-1">
+                <br>
+                <b>Step 1: What are you requesting?</b> > Step 2: What can you offer? > Step 3: Verify and Submit<br>
+                <h2>Post Job: Requesting</h2>
+                What would you like help with? Select any categories that apply.
+                <h4>Categories:</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div><div class="checkbox"><label><input type="checkbox" value="">Handling finances</label></div><div class="checkbox"><label><input type="checkbox" value="">Social Media</label></div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Please add a short description.</h4>
+                    <textarea class="form-control" rows="4"></textarea>
+                    <br>
+                    <a href="#post-job-step-2" class="btn btn-default btn-lg" id="btn-step-2">Next Step</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div id="post-job-step-2" style="display:none;">
+                <br>
+                <a href="">Step 1: What are you requesting?</a> > <b>Step 2: What can you offer?</b> > Step 3: Verify and Submit<br>
+
+                <h2>Post Job: Offering</h2>
+                <h4>What would you like to offer in return? Select any categories that apply.</h4>
+
+                <h3>Categories:</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div><div class="checkbox"><label><input type="checkbox" value="">Handling finances</label></div><div class="checkbox"><label><input type="checkbox" value="">Social Media</label></div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
+                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-8">
+                    <h4>Please add a short description.</h4>
+                    <textarea class="form-control" rows="4"></textarea>
+                    <br>
+                    <a href="#post-job-step-3" class="btn btn-default btn-lg" id="btn-step-3">Next Step</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div id="post-job-step-3" style="display:none;">
+                <br>
+                <a href="">Step 1: What are you requesting?</a> > <a href="">Step 2: What can you offer?</a> > <b>Step 3: Verify and Submit</b><br>
+
+                <h2>Post Job: Confirm Your Selection</h2>
+                Verify your selection and submit if the information is correct.
+
+                <h3>You are requesting help with:</h3>
+                <h4>Technology</h4>
+                <h3>In return, you are offering:</h3>
+                <h4>Handling finances</h4>
+
+                <br><a href="#post-job-step-4" class="btn btn-default btn-lg" id="btn-step-4">Submit</a>
+              </div>
+
+              <div id="post-job-step-4" style="display:none;">
+                <h2>Post Job: Complete</h2>
+                You have successfully posted a job.
+                <br><br>
+                 <a href="" class="btn btn-default btn-lg">Return to Home Page</a>
+              </div>
           </div>
 
           <div id="profile" class="tab-pane fade">
@@ -252,6 +335,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="../js/post-job.js"></script>
 
   </body>
 </html>
