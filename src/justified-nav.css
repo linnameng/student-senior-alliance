@@ -49,6 +49,10 @@ body {
 }
 
 .save-profile input {
+  float: right;
+}
+
+/*.save-profile input {
 	float: right;
 	color: white;
 	background-color: green;
@@ -61,7 +65,7 @@ body {
 .save-profile input:focus {
 	color: white;
 	background-color: darkgreen;
-}
+}*/
 
 /* Details for the home tab */
 
@@ -81,6 +85,26 @@ body {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+}
+
+#bottom-announcement {
+  margin-bottom: 20px;
+}
+
+#search-page-results {
+  margin-top: 50px;
+}
+
+#search-page-results h3 {
+  margin-bottom: 20px;
+}
+
+#contact-complete p {
+  font-size: 18px;
+}
+
+#search-form {
+  margin-bottom: 50px;
 }
 
 .alliance-box{
@@ -131,6 +155,7 @@ body {
 
 #btn-view-profile {
   margin-left: 10px;
+  font-size: 16px;
 }
 
 #your-posts {
@@ -156,6 +181,14 @@ body {
   background-color: #EEEEEE;
   font-size: 18px;
   padding-left: 0px;
+}
+
+#cathys-profile {
+  font-size: 16px;
+}
+
+#search {
+  font-size: 16px;
 }
 
 #search-results {

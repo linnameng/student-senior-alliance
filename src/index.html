@@ -58,13 +58,13 @@
 				<div class="boxed">
 					<h1 class="item-header">Announcements</h1>
 					<p class= "announcement">
-						<u>February 25th, 2016:</u>  The Student Senior Alliance finally goes live today! Thanks everyone for all of your patience.
+						February 25th, 2016&nbsp;&nbsp;&nbsp;&nbspThe Student Senior Alliance finally goes live today! Thanks everyone for all of your patience.
 					</p>
 					<p id="alternate-bg" class= "announcement">
-						<u>February 12th, 2016:</u>  The trial site will be down tomorrow, February 13th, between 2pm and 5pm for maintenance.
+						February 12th, 2016&nbsp;&nbsp;&nbsp;&nbspThe trial site will be down tomorrow, February 13th, between 2pm and 5pm for maintenance.
 					</p>
-					<p class= "announcement">
-						<u>January 29th, 2016:</u>  The Student Senior Alliance will be submitting the design document for review today. Fingers crossed!
+					<p id="bottom-announcement" class= "announcement">
+						January 29th, 2016&nbsp;&nbsp;&nbsp;&nbspThe Student Senior Alliance will be submitting the design document for review today. Fingers crossed!
 					</p>
 				</div>
 				<div class="boxed">
@@ -118,19 +118,14 @@
             </div>
         </div>
 
-		<!-- End all pages related to Home -->
-
         <!-- Start all pages related to Searching/Contacting -->
 
         <div id="search" class="tab-pane fade in">
-          <div id="search-current-page">
-            <!-- Container for the current page under the search tab -->
-          </div> 
           <!-- Start hidden content that can be dispalyed in the search tab -->
           <div id="posting-details" style="display:none">
             <br>
               <ol class="breadcrumb">
-                <li><a href="">Search Jobs</a></li>
+                <li><a href="search-page-results">Search Jobs</a></li>
                 <li class="active">View Posting</li>
               </ol>
 
@@ -152,8 +147,8 @@
           <div id="posting-contact" style="display:none">
              <br>
               <ol class="breadcrumb">
-                <li><a href="">Search Jobs</a></li>
-                <li><a href="">View Posting</a></li>
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li><a href="posting-details">View Posting</a></li>
                 <li class="active">Contact</li>
               </ol>
 
@@ -201,7 +196,7 @@
           <div id="search-page-results">
             <h3>I'm looking for someone to help me with:</h3>
               <p>
-              <form class="form-inline .form-inline" role="form">
+              <form id="search-form" class="form-inline .form-inline" role="form">
                 <div class="form-group">
                   <select class="form-control" id="category-select" name="category-select">
                     <option selected="true" disabled="disabled" value="default">Choose a Category</option>   
@@ -420,7 +415,7 @@
                   <div class="form-group save-profile">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                      <input class="btn" value="Save Changes" type="submit">
+                      <input class="btn btn-default btn-lg" value="Save Changes" type="submit">
                       <span></span>
                     </div>
                   </div>

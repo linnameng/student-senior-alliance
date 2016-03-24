@@ -20,12 +20,14 @@ $(document).ready( function() {
     return false;
   });
 
-  $('body').on('click','.breadcrumb',function(){
+  $('#post').on('click','.breadcrumb li a',function(){
     var content_id = $(this).attr('href');
-    this.hide();
-    content_id.show();
+    var parent_id = $(this).closest('div').attr('id');
+
+    $('#' + parent_id).hide();
+    $(content_id).show(500);
+
     return false;
   });
-      
 
  });

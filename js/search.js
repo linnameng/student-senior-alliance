@@ -6,21 +6,31 @@ $(document).ready( function() {
   });
 
   $('body').on('click','#btn-contact',function(){
-    var content_id = $(this).attr('href');
-    $('#search-current-page').hide().html($(content_id).html()).show(500);
     $('#search-page-results').hide();
+    $('#posting-details').show(500);
     return false;
   });
 
   $('body').on('click','#btn-contact-this-person',function(){
-      var content_id = $(this).attr('href');
-      $('#search-current-page').hide().html($(content_id).html()).show(500);
+      $('#posting-details').hide();
+      $('#posting-contact').show(500);
       return false;
   });
 
   $('body').on('click','#btn-send-message',function(){
-      var content_id = $(this).attr('href');
-      $('#search-current-page').hide().html($(content_id).html()).show(500);
+      $('#posting-contact').hide();
+      $('#contact-complete').show(500);
       return false;
   });
+
+  $('#search').on('click','.breadcrumb li a',function(){
+    var content_id = $(this).attr('href');
+    var parent_id = $(this).closest('div').attr('id');
+
+    $('#' + parent_id).hide();
+    $('#' + content_id).show(500);
+
+    return false;
+  });
+
  });
