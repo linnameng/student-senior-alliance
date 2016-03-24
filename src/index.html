@@ -385,23 +385,23 @@
                 </ol>
                 <h2>What would you like help with?</h2>
                 <h4>Select any categories that apply:</h4>
-                <div class="row">
+                <div class="row" id="checkboxes-requesting">
                   <div class="col-md-4">
 
-                    <div class="checkbox"><label><input type="checkbox" value="">Cleaning</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Cooking and Baking</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Exercise</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Financial Advice</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
+                    <div class="checkbox"><label for="request-cleaning"><input type="checkbox" value="" id="request-cleaning">Cleaning</label></div>
+                    <div class="checkbox"><label for="request-cooking"><input type="checkbox" value="" id="request-cooking">Cooking and Baking</label></div>
+                    <div class="checkbox"><label for="request-exercise"><input type="checkbox" value="" id="request-exercise">Exercise</label></div> 
+                    <div class="checkbox"><label for="request-finance"><input type="checkbox" value="" id="request-finance">Financial Advice</label></div>
+                    <div class="checkbox"><label for="request-healthcare"><input type="checkbox" value="" id="request-healthcare">Healthcare</label></div>
 
                   </div>
 
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Music, Crafts and Hobbies</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Physical Labour</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Tutoring and Languages</label></div>
+                    <div class="checkbox"><label for="request-music"><input type="checkbox" value="" id="music">Music, Crafts and Hobbies</label></div>
+                    <div class="checkbox"><label for="request-physical"><input type="checkbox" value="" id="request-physical">Physical Labour</label></div>
+                    <div class="checkbox"><label for="request-technology"><input type="checkbox" value="" id="request-technology">Technology</label></div>
+                    <div class="checkbox"><label for="request-transportation"><input type="checkbox" value="" id="request-transportation">Transportation</label></div>
+                    <div class="checkbox"><label for="request-tutoring"><input type="checkbox" value="" id="request-tutoring">Tutoring and Languages</label></div>
                   </div>
                 </div>
                 
@@ -428,14 +428,23 @@
 
                 <h2>What would you like to offer in return?</h2>
                 <h4> Select any categories that apply:</h4>
-                <div class="row">
+                <div class="row" id="checkboxes-offering">
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div><div class="checkbox"><label><input type="checkbox" value="">Handling finances</label></div><div class="checkbox"><label><input type="checkbox" value="">Social Media</label></div>
+
+                    <div class="checkbox"><label for="offer-cleaning"><input type="checkbox" value="" id="offer-cleaning">Cleaning</label></div>
+                    <div class="checkbox"><label for="offer-cooking"><input type="checkbox" value="" id="offer-cooking">Cooking and Baking</label></div>
+                    <div class="checkbox"><label for="offer-exercise"><input type="checkbox" value="" id="offer-exercise">Exercise</label></div> 
+                    <div class="checkbox"><label for="offer-finance"><input type="checkbox" value="" id="offer-finance">Financial Advice</label></div>
+                    <div class="checkbox"><label for="offer-healthcare"><input type="checkbox" value="" id="offer-healthcare">Healthcare</label></div>
+
                   </div>
 
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
+                    <div class="checkbox"><label for="offer-music"><input type="checkbox" value="" id="offer-music">Music, Crafts and Hobbies</label></div>
+                    <div class="checkbox"><label for="offer-physical"><input type="checkbox" value="" id="offer-physical">Physical Labour</label></div>
+                    <div class="checkbox"><label for="offer-technology"><input type="checkbox" value="" id="offer-technology">Technology</label></div>
+                    <div class="checkbox"><label for="offer-transportation"><input type="checkbox" value="" id="offer-transportation">Transportation</label></div>
+                    <div class="checkbox"><label for="offer-tutoring"><input type="checkbox" value="" id="offer-tutoring">Tutoring and Languages</label></div>
                   </div>
                 </div>
                 
@@ -462,9 +471,9 @@
                 </ol>
 
                 <h3>You are requesting help with:</h3>
-                <h4>Technology</h4>
+                <div id="new-posting-requesting"></div>
                 <h3>In return, you are offering:</h3>
-                <h4>Handling finances</h4>
+                <div id="new-posting-offering"></div>
 
                 <br><a href="#post-job-step-4" class="btn btn-default btn-lg" id="btn-step-4">Submit</a>
               </div>
