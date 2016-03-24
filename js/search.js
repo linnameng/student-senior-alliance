@@ -6,21 +6,29 @@ $(document).ready( function() {
   });
 
   $('body').on('click','#btn-contact',function(){
+    var content_id = $(this).attr('href');
+    var parent_id = $(this).closest('div').attr('id');
+
     $('#search-page-results').hide();
-    $('#posting-details').show(500);
+    $('#' + content_id).show(500);
     return false;
   });
 
   $('body').on('click','#btn-contact-this-person',function(){
-      $('#posting-details').hide();
-      $('#posting-contact').show(500);
+    var content_id = $(this).attr('href');
+    var parent_id = $(this).closest('div').attr('id');
+
+    $('#' + parent_id).hide();
+    $('#' + content_id).show(500);
       return false;
   });
 
   $('body').on('click','#btn-send-message',function(){
-      $('#posting-contact').hide();
-      $('#contact-complete').show(500);
-      return false;
+    var parent_id = $(this).parents().eq(3).attr('id'); //get parent 3 levels up
+
+    $('#' + parent_id).hide();
+    $('#contact-complete').show(500);
+    return false;
   });
 
   $('#search').on('click','.breadcrumb li a',function(){
