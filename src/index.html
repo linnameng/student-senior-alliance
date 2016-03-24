@@ -122,7 +122,7 @@
 
         <div id="search" class="tab-pane fade in">
           <!-- Start hidden content that can be dispalyed in the search tab -->
-          <div id="posting-details" style="display:none">
+          <div id="posting-details-john" style="display:none">
             <br>
               <ol class="breadcrumb">
                 <li><a href="search-page-results">Search Jobs</a></li>
@@ -141,14 +141,63 @@
             Technology: I'm willing to teach people how to set up their phones, computers, or other devices<br><br>
             <b>I am requesting:</b><br><br>
             Baking: I'd like to learn how to make bread from scratch.<br><br>
-            <a href="#posting-contact" id="btn-contact-this-person" class="btn btn-default btn-lg">Contact This Person</a>
+            <a href="posting-contact-john" id="btn-contact-this-person" class="btn btn-default btn-lg">Contact This Person</a>
             <br><br><br>
           </div>
-          <div id="posting-contact" style="display:none">
+
+          <div id="posting-details-mary" style="display:none">
+            <br>
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li class="active">View Posting</li>
+              </ol>
+
+            <h3>View Posting: </h3>
+            <p align="left"><img src="student_pic_mary.jpg" style="float:right">
+            <blockquote><h4>About Me</h4>
+              My name's Mary and I joined the SSA this year! I'm currently studying business at UNB. I've just moved to Fredericton but I'm really liking the community and want to help out any way I can.
+            </blockquote></p>
+            <b>First Name:</b> Mary<br><br>
+            <b>Last Name:</b> Brown<br><br>
+            <b>Email Address:</b> mary.brown@unb.ca<br><br>
+            <b>Phone Number:</b> 555-676-2231<br><br>
+            <b>I am offering:</b><br><br>
+            Technology: I'm great at installing software and teaching people how to use all sorts of applications.<br><br>
+            <b>I am requesting:</b><br><br>
+            Knitting: I've been meaning to learn how to knit - I want to get started with making scarves and gloves this winter.<br><br>
+            <a href="posting-contact-mary" id="btn-contact-this-person" class="btn btn-default btn-lg">Contact This Person</a>
+            <br><br><br>
+          </div>
+
+          <div id="posting-details-bob" style="display:none">
+            <br>
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li class="active">View Posting</li>
+              </ol>
+
+            <h3>View Posting: </h3>
+            <p align="left"><img src="student_pic_bob.jpg" width="150px" style="float:right">
+            <blockquote><h4>About Me</h4>
+              I'm a fourth-year student graduating this year from UNB. I've been with the SSA since it started and it's been a great experience. I've had several jobs working in IT, so I'm pretty comfortable with fixing issues related to hardware or networking. 
+            </blockquote></p>
+            <b>First Name:</b> Bob<br><br>
+            <b>Last Name:</b> Dooley<br><br>
+            <b>Email Address:</b> bob.dooley@unb.ca<br><br>
+            <b>Phone Number:</b> 555-111-5555<br><br>
+            <b>I am offering:</b><br><br>
+            Technology: If you have internet or wireless problems, I'd be happy to help.<br><br>
+            <b>I am requesting:</b><br><br>
+            Music, Crafts and Hobbies: I'm looking for someone to teach me how to play piano.<br><br>
+            <a href="posting-contact-bob" id="btn-contact-this-person" class="btn btn-default btn-lg">Contact This Person</a>
+            <br><br><br>
+          </div>
+
+          <div id="posting-contact-john" style="display:none">
              <br>
               <ol class="breadcrumb">
                 <li><a href="search-page-results">Search Jobs</a></li>
-                <li><a href="posting-details">View Posting</a></li>
+                <li><a href="posting-details-john">View Posting</a></li>
                 <li class="active">Contact</li>
               </ol>
 
@@ -162,7 +211,93 @@
                   <div class="form-group">
                     <label class="col-sm-2 control-label">From</label>
                     <div class="col-sm-10">
-                      <input class="form-control" value="natalie.webber@unb.ca">
+                      <input class="form-control" value="your_email@email.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Subject</label>
+                    <div class="col-sm-10">
+                      <input class="form-control"  value="Somebody responded to your Student-Senior Alliance posting!">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <a href="contact-complete" class="btn btn-default btn-lg" id="btn-send-message">Send Message</a>
+                    </div>
+                  </div>
+                </form>
+              <br><br><br>
+          </div>
+
+          <div id="posting-contact-mary" style="display:none">
+             <br>
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li><a href="posting-details-mary">View Posting</a></li>
+                <li class="active">Contact</li>
+              </ol>
+
+              <h3>Contact: </h3>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">To</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="mary.brown@unb.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">From</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="your_email@email.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Subject</label>
+                    <div class="col-sm-10">
+                      <input class="form-control"  value="Somebody responded to your Student-Senior Alliance posting!">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <a href="#contact-complete" class="btn btn-default btn-lg" id="btn-send-message">Send Message</a>
+                    </div>
+                  </div>
+                </form>
+              <br><br><br>
+          </div>
+
+          <div id="posting-contact-bob" style="display:none">
+             <br>
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li><a href="posting-details-bob">View Posting</a></li>
+                <li class="active">Contact</li>
+              </ol>
+
+              <h3>Contact: </h3>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">To</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="bob.dooley@unb.ca">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">From</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" value="your_email@email.ca">
                     </div>
                   </div>
                   <div class="form-group">
@@ -232,10 +367,10 @@
                     <tr><th>First Name</th><th>Last Name</th><th>Offering</th><th>Requesting</th><th></th></tr>
                   </thead>
                   <tbody>
-                    <tr><td>John</td><td>Doe</td><td><b>Technology:</b> I'm willing to teach people how to set up their phones, computers, or other devices</td><td><b>Baking:</b> I'd like to learn how to make bread from scratch.</td> <td><a href="#posting-details" id="btn-contact">Contact</a></td>
+                    <tr><td>John</td><td>Doe</td><td><b>Technology:</b> I'm willing to teach people how to set up their phones, computers, or other devices</td><td><b>Baking:</b> I'd like to learn how to make bread from scratch.</td> <td><a href="posting-details-john" id="btn-contact">Contact</a></td>
                     </tr>
-                    <tr><td>Mary</td><td>Brown</td><td><b>Technology:</b> I'm great at installing software and teaching people how to use all sorts of applications.</td><td><b>Knitting:</b> I want to get started with making scarves and gloves this winter.</td><td>Contact</td>
-                    </tr><tr><td>July</td><td>Dooley</td><td><b>Technology:</b> If you have internet or wireless problems, I'd be happy to help.</td><td><b>Music Lessons:</b> I'm looking for someone to teach me how to play piano.</td><td>Contact</td>
+                    <tr><td>Mary</td><td>Brown</td><td><b>Technology:</b> I'm great at installing software and teaching people how to use all sorts of applications.</td><td><b>Music, Crafts and Hobbies:</b> I've been meaning to learn how to knit - I want to get started with making scarves and gloves this winter.</td><td><a href="posting-details-mary" id="btn-contact">Contact</a></td>
+                    </tr><tr><td>Bob</td><td>Dooley</td><td><b>Technology:</b> If you have internet or wireless problems, I'd be happy to help.</td><td><b>Music, Crafts and Hobbies:</b> I'm looking for someone to teach me how to play piano.</td><td><a href="posting-details-bob" id="btn-contact">Contact</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -258,23 +393,23 @@
                 </ol>
                 <h2>What would you like help with?</h2>
                 <h4>Select any categories that apply:</h4>
-                <div class="row">
+                <div class="row" id="checkboxes-requesting">
                   <div class="col-md-4">
 
-                    <div class="checkbox"><label><input type="checkbox" value="">Cleaning</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Cooking and Baking</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Exercise</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Financial Advice</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
+                    <div class="checkbox"><label for="request-cleaning"><input type="checkbox" value="" id="request-cleaning">Cleaning</label></div>
+                    <div class="checkbox"><label for="request-cooking"><input type="checkbox" value="" id="request-cooking">Cooking and Baking</label></div>
+                    <div class="checkbox"><label for="request-exercise"><input type="checkbox" value="" id="request-exercise">Exercise</label></div> 
+                    <div class="checkbox"><label for="request-finance"><input type="checkbox" value="" id="request-finance">Financial Advice</label></div>
+                    <div class="checkbox"><label for="request-healthcare"><input type="checkbox" value="" id="request-healthcare">Healthcare</label></div>
 
                   </div>
 
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Music, Crafts and Hobbies</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Physical Labour</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Tutoring and Languages</label></div>
+                    <div class="checkbox"><label for="request-music"><input type="checkbox" value="" id="music">Music, Crafts and Hobbies</label></div>
+                    <div class="checkbox"><label for="request-physical"><input type="checkbox" value="" id="request-physical">Physical Labour</label></div>
+                    <div class="checkbox"><label for="request-technology"><input type="checkbox" value="" id="request-technology">Technology</label></div>
+                    <div class="checkbox"><label for="request-transportation"><input type="checkbox" value="" id="request-transportation">Transportation</label></div>
+                    <div class="checkbox"><label for="request-tutoring"><input type="checkbox" value="" id="request-tutoring">Tutoring and Languages</label></div>
                   </div>
                 </div>
                 
@@ -301,14 +436,23 @@
 
                 <h2>What would you like to offer in return?</h2>
                 <h4> Select any categories that apply:</h4>
-                <div class="row">
+                <div class="row" id="checkboxes-offering">
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div><div class="checkbox"><label><input type="checkbox" value="">Handling finances</label></div><div class="checkbox"><label><input type="checkbox" value="">Social Media</label></div>
+
+                    <div class="checkbox"><label for="offer-cleaning"><input type="checkbox" value="" id="offer-cleaning">Cleaning</label></div>
+                    <div class="checkbox"><label for="offer-cooking"><input type="checkbox" value="" id="offer-cooking">Cooking and Baking</label></div>
+                    <div class="checkbox"><label for="offer-exercise"><input type="checkbox" value="" id="offer-exercise">Exercise</label></div> 
+                    <div class="checkbox"><label for="offer-finance"><input type="checkbox" value="" id="offer-finance">Financial Advice</label></div>
+                    <div class="checkbox"><label for="offer-healthcare"><input type="checkbox" value="" id="offer-healthcare">Healthcare</label></div>
+
                   </div>
 
                   <div class="col-md-4">
-                    <div class="checkbox"><label><input type="checkbox" value="">Healthcare</label></div>
-                    <div class="checkbox"><label><input type="checkbox" value="">Transportation</label></div>
+                    <div class="checkbox"><label for="offer-music"><input type="checkbox" value="" id="offer-music">Music, Crafts and Hobbies</label></div>
+                    <div class="checkbox"><label for="offer-physical"><input type="checkbox" value="" id="offer-physical">Physical Labour</label></div>
+                    <div class="checkbox"><label for="offer-technology"><input type="checkbox" value="" id="offer-technology">Technology</label></div>
+                    <div class="checkbox"><label for="offer-transportation"><input type="checkbox" value="" id="offer-transportation">Transportation</label></div>
+                    <div class="checkbox"><label for="offer-tutoring"><input type="checkbox" value="" id="offer-tutoring">Tutoring and Languages</label></div>
                   </div>
                 </div>
                 
@@ -335,9 +479,9 @@
                 </ol>
 
                 <h3>You are requesting help with:</h3>
-                <h4>Technology</h4>
+                <div id="new-posting-requesting"></div>
                 <h3>In return, you are offering:</h3>
-                <h4>Handling finances</h4>
+                <div id="new-posting-offering"></div>
 
                 <br><a href="#post-job-step-4" class="btn btn-default btn-lg" id="btn-step-4">Submit</a>
               </div>
