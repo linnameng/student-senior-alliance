@@ -54,50 +54,43 @@
 		  
         <div id="home" class="tab-pane fade in active">
             <div class="container">
-				<h1 class="page-header">Home</h1>
+				<!-- <h1 class="page-header">Home</h1> -->
 				<div class="boxed">
 					<h1 class="item-header">Announcements</h1>
 					<p class= "announcement">
-						<u>February 25th, 2016:</u>  The Student Senior Alliance finally goes live today! Thanks everyone for all of your patience.
+						February 25th, 2016&nbsp;&nbsp;&nbsp;&nbspThe Student Senior Alliance finally goes live today! Thanks everyone for all of your patience.
 					</p>
-					<p class= "announcement">
-						<u>February 12th, 2016:</u>  The trial site will be down tomorrow, February 13th, between 2pm and 5pm for maintenance.
+					<p id="alternate-bg" class= "announcement">
+						February 12th, 2016&nbsp;&nbsp;&nbsp;&nbspThe trial site will be down tomorrow, February 13th, between 2pm and 5pm for maintenance.
 					</p>
-					<p class= "announcement">
-						<u>January 29th, 2016:</u>  The Student Senior Alliance will be submitting the design document for review today. Fingers crossed!
+					<p id="bottom-announcement" class= "announcement">
+						January 29th, 2016&nbsp;&nbsp;&nbsp;&nbspThe Student Senior Alliance will be submitting the design document for review today. Fingers crossed!
 					</p>
 				</div>
 				<div class="boxed">
 					<h1 class="item-header">Upcoming Alliances</h1>
 					<div class="container-fluid">
 						<div class="row alliance-box">
-							<div class="col-md-3">
-								<p>
-									<u>March 1st</u> from <u>5pm</u> to <u>8pm</u>
-								</p>
-							</div>
-							<div class="col-md-3">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="row">
-											<div class="col-md-12">
-												<img alt="avatar" src="profile-student.jpg" />
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<p>
-													Cathy Wells
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6">	 
-										<a href="#search" id="btn-view-profile" class="btn btn-default btn-lg" style="font-size:16px; margin-top: 50px; padding-left: 10px; width: 107px">View Profile</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
+
+              <div class="alliance-col1">
+                    <div>
+                      <img class="avatar img-circle img-thumbnail" alt="avatar" src="profile-student.jpg" /> 
+                    </div>
+                    <div>
+                      <p id="alliance-name">Cathy Wells</p>
+                      <a href="" id="btn-view-profile" class="btn btn-default">View Profile</a>
+                    </div>
+              </div>
+
+              <div id="date" class="col-md-3">
+                <h4>
+                  <b>Date</b>
+                </h4>
+                <p>5-8pm on March 1st</p>
+                <p></p>
+              </div>
+
+							<div id="offer" class="col-md-3">
 								<h4>
 									<b>Offer</b>
 								</h4>
@@ -105,7 +98,7 @@
 									Help with iPad use.
 								</p>
 							</div>
-							<div class="col-md-3">
+							<div id="request" class="col-md-3">
 								<h4>
 									<b>Request</b>
 								</h4>
@@ -116,7 +109,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="boxed">
+				<div id="your-posts" class="boxed">
 					<h1 class="item-header">Your Posts</h1>
 					<p>
 						<center>Your current posts will show up here. To create a new post, select the <a href="#post">Post Jobs</a> tab from the top of the screen.</center>
@@ -125,21 +118,18 @@
             </div>
         </div>
 
-		<!-- End all pages related to Home -->
-
         <!-- Start all pages related to Searching/Contacting -->
 
         <div id="search" class="tab-pane fade in">
-          <div id="search-current-page">
-            <!-- Container for the current page under the search tab -->
-          </div> 
           <!-- Start hidden content that can be dispalyed in the search tab -->
           <div id="posting-details-john" style="display:none">
             <br>
-            <a href="search-results-technology.html">Search Jobs</a> > View Posting
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li class="active">View Posting</li>
+              </ol>
 
-            <h3>View Posting: </h3>
-            <p align="left"><img src="student_pic.png" style="float:right">
+            <p align="left"><img class="avatar img-circle img-thumbnail" alt="avatar" src="student_pic.png" style="float:right">
             <blockquote><h4>About Me</h4>
               Hi, I'm John and I'm a third-year student at UNB. I joined the SSA last year and I'd love to help with anything you might need, especially if it involves technology. In my free time I also love to ski and play basketball.
             </blockquote></p>
@@ -199,9 +189,12 @@
 
           <div id="posting-contact-john" style="display:none">
              <br>
-             <a href="search-results-technology.html">Search Jobs</a> > <a href="search-view-posting">View Posting</a> > Contact
+              <ol class="breadcrumb">
+                <li><a href="search-page-results">Search Jobs</a></li>
+                <li><a href="posting-details">View Posting</a></li>
+                <li class="active">Contact</li>
+              </ol>
 
-              <h3>Contact: </h3>
                 <form class="form-horizontal">
                   <div class="form-group">
                     <label class="col-sm-2 control-label">To</label>
@@ -324,7 +317,7 @@
           <div id="search-page-results">
             <h3>I'm looking for someone to help me with:</h3>
               <p>
-              <form class="form-inline .form-inline" role="form">
+              <form id="search-form" class="form-inline .form-inline" role="form">
                 <div class="form-group">
                   <select class="form-control" id="category-select" name="category-select">
                     <option selected="true" disabled="disabled" value="default">Choose a Category</option>   
@@ -341,7 +334,7 @@
 
 
                   </select>
-                   <a class="btn btn-default" id="btn-search-jobs">Search Jobs</a>
+                   <a class="btn btn-default btn-large" id="btn-search-jobs">Search Jobs</a>
                 </div>
               </form>
 
@@ -375,16 +368,17 @@
           <!-- Start all pages related to Posting a Job -->
           <div id="post" class="tab-pane fade">
 
-              <div id="post-job-container">
-                <!-- Container for the current page under the search tab -->
-              </div> 
-
               <div id="post-job-step-1">
-                <br>
-                <b>Step 1: What are you requesting?</b> > Step 2: What can you offer? > Step 3: Verify and Submit<br>
-                <h2>Post Job: Requesting</h2>
-                What would you like help with? Select any categories that apply.
-                <h4>Categories:</h4>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                   aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                  </div>
+                </div>
+                <ol class="breadcrumb">
+                  <li class="active">Step 1</li>
+                </ol>
+                <h2>What would you like help with?</h2>
+                <h4>Select any categories that apply:</h4>
                 <div class="row">
                   <div class="col-md-4">
 
@@ -407,23 +401,27 @@
                 
                 <div class="row">
                   <div class="col-md-8">
-                    <h4>Please add a short description.</h4>
+                    <h4>Please add a short description</h4>
                     <textarea class="form-control" rows="4"></textarea>
                     <br>
                     <a href="#post-job-step-2" class="btn btn-default btn-lg" id="btn-step-2">Next Step</a>
                   </div>
                 </div>
-
               </div>
 
-              <div id="post-job-step-2" style="display:none;">
-                <br>
-                <a href="">Step 1: What are you requesting?</a> > <b>Step 2: What can you offer?</b> > Step 3: Verify and Submit<br>
+              <div id="post-job-step-2"  style="display:none;">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                   aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+                  </div>
+                </div>
+                <ol class="breadcrumb">
+                  <li><a href="#post-job-step-1">Step 1</a></li>
+                  <li class="active">Step 2</li>
+                </ol>
 
-                <h2>Post Job: Offering</h2>
-                <h4>What would you like to offer in return? Select any categories that apply.</h4>
-
-                <h3>Categories:</h3>
+                <h2>What would you like to offer in return?</h2>
+                <h4> Select any categories that apply:</h4>
                 <div class="row">
                   <div class="col-md-4">
                     <div class="checkbox"><label><input type="checkbox" value="">Technology</label></div><div class="checkbox"><label><input type="checkbox" value="">Handling finances</label></div><div class="checkbox"><label><input type="checkbox" value="">Social Media</label></div>
@@ -437,21 +435,25 @@
                 
                 <div class="row">
                   <div class="col-md-8">
-                    <h4>Please add a short description.</h4>
+                    <h4>Please add a short description</h4>
                     <textarea class="form-control" rows="4"></textarea>
                     <br>
                     <a href="#post-job-step-3" class="btn btn-default btn-lg" id="btn-step-3">Next Step</a>
                   </div>
                 </div>
-
               </div>
 
-              <div id="post-job-step-3" style="display:none;">
-                <br>
-                <a href="">Step 1: What are you requesting?</a> > <a href="">Step 2: What can you offer?</a> > <b>Step 3: Verify and Submit</b><br>
-
-                <h2>Post Job: Confirm Your Selection</h2>
-                Verify your selection and submit if the information is correct.
+              <div id="post-job-step-3"  style="display:none;">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                   aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width:66%">
+                  </div>
+                </div>
+                <ol class="breadcrumb">
+                  <li><a href="#post-job-step-1">Step 1</a></li>
+                  <li><a href="#post-job-step-2">Step 2</a></li>
+                  <li class="active">Step 3</li>
+                </ol>
 
                 <h3>You are requesting help with:</h3>
                 <h4>Technology</h4>
@@ -462,16 +464,21 @@
               </div>
 
               <div id="post-job-step-4" style="display:none;">
-                <h2>Post Job: Complete</h2>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                  </div>
+                </div>
+                <h2>Complete</h2>
                 You have successfully posted a job.
                 <br><br>
                  <a href="" class="btn btn-default btn-lg">Return to Home Page</a>
               </div>
           </div>
 
+
           <div id="profile" class="tab-pane fade">
            <div class="container">
-            <h1 class="page-header">Profile Details</h1>
             <div class="row">
               <!-- left column -->
               <div class="col-md-4 col-sm-6 col-xs-12">
@@ -485,43 +492,43 @@
               <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="col-lg-3 control-label">First name:</label>
+                    <label class="col-lg-3 control-label">First name</label>
                     <div class="col-lg-8">
                       <input class="form-control" value="Jane" type="text">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-3 control-label">Last name:</label>
+                    <label class="col-lg-3 control-label">Last name</label>
                     <div class="col-lg-8">
                       <input class="form-control" value="Bishop" type="text">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-3 control-label">Email:</label>
+                    <label class="col-lg-3 control-label">Email</label>
                     <div class="col-lg-8">
                       <input disabled class="form-control" value="janesemail@gmail.com" type="text">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Username:</label>
+                    <label class="col-md-3 control-label">Username</label>
                     <div class="col-md-8">
                       <input disabled class="form-control" value="janeuser" type="text">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Password:</label>
+                    <label class="col-md-3 control-label">Password</label>
                     <div class="col-md-8">
                       <input class="form-control" value="11111122333" type="password">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Confirm password:</label>
+                    <label class="col-md-3 control-label">Confirm password</label>
                     <div class="col-md-8">
                       <input class="form-control" value="11111122333" type="password">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-3 control-label">Something about yourself:</label>
+                    <label class="col-md-3 control-label">Something about yourself</label>
                     <div class="col-md-8">
                       <textarea class="form-control" rows="5">Interests include knitting and selfies</textarea>
                     </div>
@@ -529,7 +536,7 @@
                   <div class="form-group save-profile">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                      <input class="btn" value="Save Changes" type="submit">
+                      <input class="btn btn-default btn-lg" value="Save Changes" type="submit">
                       <span></span>
                     </div>
                   </div>
