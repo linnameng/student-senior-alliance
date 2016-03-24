@@ -5,7 +5,21 @@ $(document).ready( function() {
     return false;
   });
 
-  $('body').on('click','#btn-contact',function(){
+  $('body').on('click','#btn-contact-john',function(){
+    var content_id = $(this).attr('href');
+    $('#search-current-page').hide().html($(content_id).html()).show(500);
+    $('#search-page-results').hide();
+    return false;
+  });
+
+  $('body').on('click','#btn-contact-mary',function(){
+    var content_id = $(this).attr('href');
+    $('#search-current-page').hide().html($(content_id).html()).show(500);
+    $('#search-page-results').hide();
+    return false;
+  });
+
+  $('body').on('click','#btn-contact-bob',function(){
     var content_id = $(this).attr('href');
     $('#search-current-page').hide().html($(content_id).html()).show(500);
     $('#search-page-results').hide();
