@@ -14,6 +14,8 @@ $(document).ready( function() {
     $('#post-job-step-2').hide();
     $('#post-job-step-3').show(500);
 
+    // Save the user's checked categories
+
     var categories_requesting = [];
     $('#checkboxes-requesting input:checked').each(function() {
       var label = $("label[for='"+$(this).attr("id")+"']");
@@ -26,13 +28,13 @@ $(document).ready( function() {
       categories_offering.push(label.text());
     });
 
+    // Add selected categories to the UI
+    
     $.each(categories_requesting, function(index, value) {
-      //alert(value);
       $('#new-posting-requesting').append("<h4>"+value+"</h4>");
     });
 
     $.each(categories_offering, function(index, value) {
-      //alert('offering'+value);
       $('#new-posting-offering').append("<h4>"+value+"</h4>");
     });
    
